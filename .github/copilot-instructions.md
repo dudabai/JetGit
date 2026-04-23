@@ -1,3 +1,37 @@
+## About JetGit
+
+This repository is a fork of [gitbutlerapp/gitbutler](https://github.com/gitbutlerapp/gitbutler),
+being transformed into a **JetBrains IDE-style Git desktop client** codenamed **JetGit**.
+GitButler's Virtual Branches feature is preserved as an optional advanced mode; the primary
+interaction fully replicates the JetBrains IDEA Git tool-window experience.
+
+### JetGit Directory Conventions
+
+- New UI components → `apps/desktop/src/lib/jetgit/`
+- New Rust commands → `crates/gitbutler-jetgit/`
+- JetBrains theme & atomic components → `packages/ui-jetbrains/`
+- JetGit route (non-destructive entry point) → `apps/desktop/src/routes/jetgit/`
+
+### JetGit UI/UX Guidelines
+
+- Replicate the JetBrains IDEA Git tool-window layout: left/right/bottom/float docking
+- Default theme: Darcula (CSS variables defined in `packages/ui-jetbrains/themes/darcula.css`)
+- Default font: JetBrains Mono (`@fontsource/jetbrains-mono`)
+- Do NOT copy JetBrains trademarks; replicate interaction patterns and visual style only
+
+### JetGit Coding Conventions
+
+- `cargo clippy -- -D warnings` and `cargo fmt --check` must pass for all new Rust code
+- `pnpm lint` and `pnpm check` must pass for all new frontend code
+- All new Svelte components **must** use Svelte 5 runes syntax (`$state`, `$derived`, `$effect`)
+  — do NOT use the legacy `$:` reactive syntax
+- Follow Conventional Commits for commit messages
+- New Tauri commands must have unit tests
+- Read existing files before writing new ones; extend via new files/directories, not by
+  overwriting existing GitButler source files
+
+---
+
 ## General information
 
 This is a monorepo with multiple projects.

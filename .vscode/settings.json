@@ -43,7 +43,12 @@
 	"[mdx]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
+	"[toml]": {
+		"editor.defaultFormatter": "tamasfe.even-better-toml"
+	},
 	"svelte.plugin.css.globals": "packages/ui/src/**/*.css",
 	"js/ts.preferences.importModuleSpecifier": "non-relative",
-	"editor.formatOnSave": true
+	"editor.formatOnSave": true,
+	"editor.tabSize": 4,
+	"editor.insertSpaces": false
 }

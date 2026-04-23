@@ -993,6 +993,31 @@ importers:
         specifier: 'catalog:'
         version: 3.2.4(@types/debug@4.1.13)(@types/node@24.12.0)(@vitest/browser@3.2.4)(@vitest/ui@3.2.4)(jiti@2.6.1)(jsdom@28.1.0)(sass-embedded@1.98.0)(sass@1.98.0)(tsx@4.21.0)(yaml@2.8.2)
 
+  packages/ui-jetbrains:
+    dependencies:
+      '@fontsource/jetbrains-mono':
+        specifier: 5.2.8
+        version: 5.2.8
+    devDependencies:
+      '@sveltejs/adapter-static':
+        specifier: catalog:svelte
+        version: 3.0.10(@sveltejs/kit@2.52.2(@opentelemetry/api@1.9.0)(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.54.0)(vite@6.4.2(@types/node@24.12.0)(jiti@2.6.1)(sass-embedded@1.98.0)(sass@1.98.0)(tsx@4.21.0)(yaml@2.8.2)))(svelte@5.54.0)(typescript@5.9.3)(vite@6.4.2(@types/node@24.12.0)(jiti@2.6.1)(sass-embedded@1.98.0)(sass@1.98.0)(tsx@4.21.0)(yaml@2.8.2)))
+      '@sveltejs/package':
+        specifier: catalog:svelte
+        version: 2.5.7(svelte@5.54.0)(typescript@5.9.3)
+      '@sveltejs/vite-plugin-svelte':
+        specifier: catalog:svelte
+        version: 6.2.4(svelte@5.54.0)(vite@6.4.2(@types/node@24.12.0)(jiti@2.6.1)(sass-embedded@1.98.0)(sass@1.98.0)(tsx@4.21.0)(yaml@2.8.2))
+      svelte:
+        specifier: catalog:svelte
+        version: 5.54.0
+      svelte-check:
+        specifier: catalog:svelte
+        version: 4.4.5(picomatch@4.0.3)(svelte@5.54.0)(typescript@5.9.3)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
 packages:
 
   7zip-bin@5.2.0:
@@ -1866,6 +1891,9 @@ packages:
 
   '@floating-ui/utils@0.2.11':
     resolution: {integrity: sha512-RiB/yIh78pcIxl6lLMG0CgBXAZ2Y0eVHqMPYugu+9U0AeT6YBeiJpf7lbdJNIugFP5SIjwNRgo4DhR1Qxi26Gg==}
+
+  '@fontsource/jetbrains-mono@5.2.8':
+    resolution: {integrity: sha512-6w8/SG4kqvIMu7xd7wt6x3idn1Qux3p9N62s6G3rfldOUYHpWcc2FKrqf+Vo44jRvqWj2oAtTHrZXEP23oSKwQ==}
 
   '@giphy/js-analytics@5.0.0':
     resolution: {integrity: sha512-jBZG6OqyMWB6meLi8Sz3iLplXYnhkbj+DJhS4ChmRX8Y6UA7i5dbbsUN/So1s7tTjhZOvu0rxA6rWJE73S1FvQ==}
@@ -10581,6 +10609,8 @@ snapshots:
       react-dom: 19.2.4(react@19.2.4)
 
   '@floating-ui/utils@0.2.11': {}
+
+  '@fontsource/jetbrains-mono@5.2.8': {}
 
   '@giphy/js-analytics@5.0.0':
     dependencies:
