@@ -75,7 +75,13 @@
 </div>
 
 <style>
-	/* Import Darcula theme variables inline for this route */
+	/*
+	 * Darcula theme CSS variables are inlined here because packages/ui-jetbrains
+	 * is not yet published as a built package.
+	 * Once the package is built and added to @gitbutler/desktop dependencies,
+	 * replace this block with:  @import "@jetgit/ui-jetbrains/themes/darcula.css";
+	 * The authoritative source of truth is packages/ui-jetbrains/themes/darcula.css.
+	 */
 	:global([data-theme="darcula"]) {
 		--jb-bg-primary: #2b2b2b;
 		--jb-bg-secondary: #313335;

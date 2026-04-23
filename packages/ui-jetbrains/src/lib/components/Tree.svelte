@@ -20,13 +20,15 @@
 		onSelect?: (id: string) => void;
 		/** Depth for indentation (internal use) */
 		depth?: number;
+		/** Maximum nesting depth to prevent infinite recursion (default: 50) */
+		maxDepth?: number;
 	}
 </script>
 
 <script lang="ts">
-	import Tree from "./Tree.svelte";
+	import Tree from "$lib/components/Tree.svelte";
 
-	let { nodes, selectedId = $bindable(""), onSelect, depth = 0 }: Props = $props();
+	let { nodes, selectedId = $bindable(""), onSelect, depth = 0, maxDepth = 50 }: Props = $props();
 
 	let expanded = $state<Record<string, boolean>>({});
 
@@ -63,8 +65,8 @@
 				{/if}
 				<span class="jb-tree-label">{node.label}</span>
 			</button>
-			{#if hasChildren && isExpanded}
-				<Tree nodes={node.children ?? []} {selectedId} {onSelect} depth={depth + 1} />
+			{#if hasChildren && isExpanded && depth < maxDepth}
+				<Tree nodes={node.children ?? []} {selectedId} {onSelect} depth={depth + 1} {maxDepth} />
 			{/if}
 		</li>
 	{/each}

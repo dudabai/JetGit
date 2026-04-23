@@ -27,8 +27,8 @@
 <svelte:window onkeydown={open ? handleKeydown : undefined} />
 
 {#if open}
-	<!-- svelte-ignore a11y_click_events_have_key_events a11y_no_static_element_interactions -->
-	<div class="jb-popup-overlay" onclick={onClose}></div>
+	<button type="button" class="jb-popup-overlay" aria-label="Close dialog" onclick={onClose}
+	></button>
 	<div class="jb-popup" role="dialog" aria-modal="true" aria-label={title}>
 		{#if title}
 			<div class="jb-popup-header">
@@ -54,7 +54,10 @@
 		z-index: 999;
 		position: fixed;
 		inset: 0;
+		padding: 0;
+		border: none;
 		background: rgba(0, 0, 0, 0.4);
+		cursor: default;
 	}
 
 	.jb-popup {

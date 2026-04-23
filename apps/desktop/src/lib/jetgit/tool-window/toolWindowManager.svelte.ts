@@ -25,7 +25,8 @@ function loadFromStorage(): Record<string, Partial<ToolWindowState>> {
 	try {
 		const raw = localStorage.getItem(STORAGE_KEY);
 		return raw ? (JSON.parse(raw) as Record<string, Partial<ToolWindowState>>) : {};
-	} catch {
+	} catch (err) {
+		console.error("Failed to load JetGit tool window state from localStorage:", err);
 		return {};
 	}
 }
