@@ -1,4 +1,17 @@
 <div align="center">
+
+> **About this fork: JetGit**
+> This repository is forked from [gitbutlerapp/gitbutler](https://github.com/gitbutlerapp/gitbutler) and is being
+> transformed into a **JetBrains IDE-style Git desktop client** codenamed **JetGit**.
+> GitButler's Virtual Branches feature is preserved as an optional advanced mode.
+> The primary interaction replicates the JetBrains IDEA Git tool-window experience.
+> Access the new UI at the `/jetgit` route (non-destructive; original GitButler UI is preserved).
+>
+> New code lives in: `apps/desktop/src/lib/jetgit/`, `packages/ui-jetbrains/`, and (future) `crates/gitbutler-jetgit/`.
+
+---
+
+<div align="center">
   
   <img align="center" width="100px" src="https://gitbutler-docs-images-public.s3.us-east-1.amazonaws.com/md-logo.png" alt="GitButler logo" />
   <br />

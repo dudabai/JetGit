@@ -1,0 +1,76 @@
+/**
+ * JetBrains Darcula Theme – CSS custom properties for JetGit
+ *
+ * Colors are approximated from the JetBrains IntelliJ Darcula palette.
+ * No JetBrains trademarks are reproduced; only the visual style is referenced.
+ */
+
+:root,
+[data-theme="darcula"] {
+	/* ── Backgrounds ──────────────────────────────────────────────────────── */
+	--jb-bg-primary: #2b2b2b;
+	--jb-bg-secondary: #313335;
+	--jb-bg-tool-window: #3c3f41;
+	--jb-bg-elevated: #45484a;
+	--jb-bg-input: #1e1e1e;
+	--jb-bg-hover: rgba(255, 255, 255, 0.07);
+	--jb-bg-active: rgba(75, 110, 175, 0.4);
+	--jb-bg-selection: #214283;
+
+	/* ── Foreground / Text ────────────────────────────────────────────────── */
+	--jb-fg-primary: #bbbbbb;
+	--jb-fg-secondary: #808080;
+	--jb-fg-disabled: #606060;
+	--jb-fg-link: #5c94ce;
+	--jb-fg-on-accent: #ffffff;
+
+	/* ── Borders ─────────────────────────────────────────────────────────── */
+	--jb-border-color: #555555;
+	--jb-border-focused: #6897bb;
+	--jb-border-subtle: #434648;
+
+	/* ── Accent / Action colors ───────────────────────────────────────────── */
+	--jb-accent: #4b6eaf;
+	--jb-accent-hover: #5c7ebd;
+	--jb-accent-active: #3b5e9e;
+
+	/* ── Status colors ────────────────────────────────────────────────────── */
+	--jb-success: #499c54;
+	--jb-warning: #e2c22e;
+	--jb-error: #c75450;
+	--jb-info: #6897bb;
+
+	/* ── Tool Window ──────────────────────────────────────────────────────── */
+	--jb-tool-window-header-bg: #3c3f41;
+	--jb-tool-window-header-fg: #bbbbbb;
+	--jb-tool-window-header-height: 28px;
+	--jb-tool-window-min-width: 200px;
+	--jb-tool-window-default-width: 280px;
+	--jb-tool-window-bar-width: 28px;
+
+	/* ── Tabs ─────────────────────────────────────────────────────────────── */
+	--jb-tab-bg: #3c3f41;
+	--jb-tab-fg: #a9b7c6;
+	--jb-tab-bg-active: #4b6eaf;
+	--jb-tab-fg-active: #ffffff;
+	--jb-tab-bg-hover: #4c5052;
+	--jb-tab-height: 28px;
+	--jb-tab-border-radius: 2px;
+
+	/* ── Scrollbar ────────────────────────────────────────────────────────── */
+	--jb-scrollbar-track: #2b2b2b;
+	--jb-scrollbar-thumb: #4e5254;
+	--jb-scrollbar-thumb-hover: #6e7274;
+
+	/* ── Font ─────────────────────────────────────────────────────────────── */
+	--jb-font-family: "JetBrains Mono", "Cascadia Code", "Fira Code", monospace;
+	--jb-font-size: 13px;
+	--jb-font-size-sm: 11px;
+	--jb-line-height: 1.5;
+
+	/* ── Misc ─────────────────────────────────────────────────────────────── */
+	--jb-radius-sm: 2px;
+	--jb-radius: 4px;
+	--jb-transition: 150ms ease;
+	--jb-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
